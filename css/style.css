@@ -106,3 +106,7 @@ a {
   text-transform: uppercase;
   font-weight: bold;
 }
+.grid-4 .card a:hover i {
+  margin-left: 5px;
+  transition: linear 200ms;
+}
