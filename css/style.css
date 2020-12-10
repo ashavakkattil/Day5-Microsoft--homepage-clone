@@ -1,6 +1,8 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-size: 15px;
-  box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
   padding: 0px;
@@ -8,6 +10,21 @@ body {
 }
 a {
   text-decoration: none;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+}
+
+.dark {
+  color: #fff;
+  background: #262626;
+}
+.light {
+  color: #333333;
+  background: #f4f4f4;
 }
 .container {
   width: 90%;
@@ -71,21 +88,17 @@ a {
   margin-bottom: 20px;
 }
 .showcase .title {
-  padding-top: 210px;
-}
-.showcase .text {
-  margin-bottom: 35px;
+  padding-top: 180px;
 }
 .myButton {
   padding: 13px 20px;
-  background: #262626;
-  color: white;
   border: none;
   font-weight: bold;
   font-family: inherit;
   font-size: inherit;
+  text-transform: capitalize;
 }
-.showcase .myButton:hover {
+.myButton:hover {
   background: #333333;
 }
 .myButton i {
@@ -94,6 +107,7 @@ a {
 /* Cards Styles */
 
 .grid-4 {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
@@ -109,4 +123,43 @@ a {
 .grid-4 .card a:hover i {
   margin-left: 5px;
   transition: linear 200ms;
+}
+/* XBox Styles */
+.slider {
+  margin-top: 20px;
+  display: flex;
+  flex-basis: 20%;
+  flex-direction: column;
+  align-items: flex-start;
+  background: url("../images/xbox.png") no-repeat center/cover;
+  height: 350px;
+  width: 100%;
+  padding: 40px;
+}
+
+.slider h2 {
+  margin-bottom: 0px;
+}
+.slider p {
+  margin-bottom: 20px;
+}
+.xBox {
+  background: url("../images/xbox.png") no-repeat center/cover;
+}
+.xBox p {
+  width: 39%;
+}
+.carbon {
+  background: url("../images/carbon.jpg") no-repeat center/cover;
+  color: #fff;
+  justify-content: center;
+}
+.carbon p {
+  width: 60%;
+}
+
+/* Social media styles */
+.social ul li {
+  margin-top: 20px;
+  padding-right: 20px;
 }
