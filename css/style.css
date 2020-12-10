@@ -1,0 +1,58 @@
+* {
+  /* Box-sizing specifies whether padding and border should be included while calculating the elemnts height and width.
+   border-box property includes padding and border in the elements height and width */
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background: white;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: #262626;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.container {
+  width: 90%;
+  max-width: 1110px;
+  margin: auto;
+}
+
+/* Nav bar style */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 60px;
+  padding: 20px 0;
+  font-size: 13px;
+}
+.menu .logo {
+  width: 110px;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  padding: 0px 10px;
+}
+.menu ul li a {
+  padding-bottom: 2px;
+}
+.menu ul li a:hover {
+  border-bottom: #262626 solid 2px;
+}
+.menu .mainMenu {
+  flex: 1;
+  margin-left: 20px;
+}
