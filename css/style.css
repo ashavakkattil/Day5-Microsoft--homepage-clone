@@ -78,12 +78,37 @@ ul {
   margin-bottom: 20px;
   cursor: pointer;
 }
-.showcase .btn{
-    margin-top: 20px;
+.showcase .btn {
+  margin-top: 20px;
 }
-.showcase .btn:hover{
-    opacity: 0.9;
+.showcase .btn:hover {
+  opacity: 0.9;
 }
-.showcase h2, .showcase p{
-    margin-bottom: 10px;
+.showcase h2,
+.showcase p {
+  margin-bottom: 10px;
+}
+
+/* Home Cards Style */
+.homeCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.homeCards .card img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.homeCards .card h3 {
+  margin-bottom: 10px;
+}
+.homeCards .card a {
+  display: inline-block;
+  padding-top: 10px;
+  color: #0067b8;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.homeCards .card a:hover i{
+    margin-left: 5px;
 }
