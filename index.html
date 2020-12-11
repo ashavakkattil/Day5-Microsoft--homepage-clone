@@ -13,6 +13,7 @@
 <body>
     <div class="container">
         <!-- Header -->
+        <i class="fas fa-bars fa-2x menuBtn"></i>
         <nav class="menu">
             <img src="./images/logo.png" alt="Microsoft" class="logo">
             <ul class="mainMenu">
@@ -177,6 +178,11 @@
         </div>
         </div>
     </footer>
+    <script>
+        document.querySelector('.menuBtn').addEventListener('click', () => {
+            document.querySelector('.mainMenu').classList.toggle('show')
+        })
+    </script>
 </body>
 
 </html>
